@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>form :focus:required:invalid {border-color: #a94442;}</style>
+</head>
+<body class="container">
+    <header><h1>Primary Traveler</h1></header>
+    <section>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form travel-form="form">
+                    <table>
+                        <tr>
+                            <td style="padding-right: 50px; padding-bottom: 50px;">
+                                <label for="username">
+                                    <span>First Name</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="text" id="username"  required>
+                            </td>
+                            <td style="padding-right: 50px; padding-bottom: 50px;">
+                                <label for="middlename"></label><br>
+                                <input type="text" id="middlename" placeholder="Middle Initital">
+                            </td>
+                            <td style="padding-bottom: 50px;">
+                                <label for="lastname">
+                                    <span>Last Name</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="text" id="lastname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 50px; padding-bottom: 50px;">
+                                <label for="countrycode">
+                                    <span>Country Code</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="number" id="countrycode"  required>
+                            </td>
+                            <td style="padding-right: 50px; padding-bottom: 50px;">
+                                <label for="phone">
+                                    <span>Mobile Phone Number</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="tel" id="phone" required>
+                            </td>
+                            <td style="padding-bottom: 50px;">
+                                <label for="email">
+                                    <span>Email</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="email" id="emailAddress"  required placeholder="abc@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 50px;">
+                                <label for="dob">
+                                    <span>Date of Birth</span>
+						            <strong style="color: red;">*</strong>
+                                </label><br>
+                                <input type="date" id="DateOfBirth">
+                            </td>
+                            <td style="padding-bottom: 50px;">
+                                <label for="reward"></label><br>
+                                <input type="number" id="reward" placeholder="Amtrak guess reward #">
+                            </td>
+                            <td style="padding-bottom: 50px;">
+                                <label for="alert">Alert Me</label><br>
+                                <div class="radio"><label><input type="radio" name="size" value="text" checked>Text</label>
+                                <div class="radio"><label><input type="radio" name="size" value="email" checked>Email</label>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form travel-form="form" style="padding-bottom: 50px;">
+                    <header><h3>Share Your Travel Plans</h3></header>
+                    <br>
+                    <h5>Add up to three email addresses to receive your travel details. Payment and billing information will not be shared.</h5>
+                    <br>
+                    <div>
+                        <label style="padding-right: 50px; padding-bottom: 20px;"><input type="checkbox"> Send eTicket</label>
+                        <label style="padding-right: 50px; padding-bottom: 20px;"><input type="checkbox"> Send Itinerary</label>
+                        <label style="padding-bottom: 20px;"><a href="#">Add Email Address</a></label>
+                        <br>
+                        <input type="email" id="emailAddress" placeholder="Email"/>
+                    </div>
+                </form>
+                <button type="reset" class="btn btn-primary">Back</button>
+                <button type="submit" class="btn btn-primary" style="background-color: seagreen;">CONTINUE</button>
+            </div>
+        </div>
+    </section>
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>
